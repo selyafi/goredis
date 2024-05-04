@@ -11,3 +11,9 @@ func (p *Peer) reedLoop() {
 
 	}
 }
+
+func NewPeer(conn net.Conn) *Peer {
+	return &Peer{
+		conn: conn,
+	}
+}
